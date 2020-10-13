@@ -39,10 +39,10 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:pt-0">
                     <img src="" alt="">
-                    <h1>Maseno University</h1>
+                    <h1 style="font-size: 48px">Maseno University</h1>
                 </div>
                 <div class="flex justify-center pt-8 sm:pt-0">
-                    <h3>Students Clearance System: School Of Computing and Informatics</h3>
+                    <h2>Students Clearance System: School Of Computing and Informatics</h2>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
@@ -54,8 +54,8 @@
                             </div>
 
                             <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
+                                    Maseno University's School of Computing and Informatics. There are various departments within this school based on the cources offered which include; Computer Science, Information Technology, Information Communication Technology Management, and Computer Technology departments.
                                 </div>
                             </div>
                         </div>
@@ -67,8 +67,8 @@
                             </div>
 
                             <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
+                                    Finance department deals with the financial information of students. The department plays an important role in the determination of the students to be cleared based on the school fees statements and other financial obligations the students to be cleared have to the school.
                                 </div>
                             </div>
                         </div>
@@ -80,8 +80,8 @@
                             </div>
 
                             <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
+                                    Students in their stay at school have interactions with the library. The library department therefore holds students records on the books and other academic resources borrowed with details of submission and pending submissions. The library record is checked in the determination of clearing a student.
                                 </div>
                             </div>
                         </div>
