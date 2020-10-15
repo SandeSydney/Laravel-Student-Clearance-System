@@ -40,8 +40,11 @@
             @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex justify-center pt-8 sm:pt-0 mt-5">
+                    <img src="{{asset('images/MU-Logo.png')}}" alt="Logo with image of Gradating students over an image of an open book" width="100">
+                </div>
                 <div class="flex justify-center pt-8 sm:pt-0">
-                    <img src="" alt="">
+
                     <h1 style="font-size: 48px">Maseno University</h1>
                 </div>
                 <div class="flex justify-center pt-8 sm:pt-0">
@@ -52,6 +55,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
                             <div class="flex items-center">
+                            <img src="{{asset('images/Computing.png')}}" alt="SCI logo" width="40">
                                 <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="text-gray-900 dark:text-white">School of Computing and Informatics</a></div>
                             </div>
 
@@ -64,6 +68,7 @@
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                             <div class="flex items-center">
+                                <img src="{{asset('images/finance.png')}}" alt="finance.p logo" width="40">
                                 <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="text-gray-900 dark:text-white">Finance Department</a></div>
                             </div>
 
@@ -76,6 +81,7 @@
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                             <div class="flex items-center">
+                                <img src="{{asset('images/library.png')}}" alt="library logo" width="40">
                                 <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="text-gray-900 dark:text-white">Library Department</a></div>
                             </div>
 
@@ -88,6 +94,7 @@
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                             <div class="flex items-center">
+                                <img src="{{asset('images/registrar.jpg')}}" alt="registrar logo" width="40">
                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Registrar of Students and Academic Affairs</div>
                             </div>
 
