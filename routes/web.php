@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/clearance-form', 'App\Http\Controllers\UserController@clearanceForm');
+
 Route::get('/admin', 'App\Http\Controllers\AdminController@index');
 
 Auth::routes();
