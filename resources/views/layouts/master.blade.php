@@ -43,7 +43,7 @@
     <div class="sidebar" data-color="blue"><!--Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"-->
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
-          <img src="" alt="">
+        <img src="{{asset('images/MU-Logo.png')}}" alt="">
         </a>
         <a href="#" class="simple-text logo-normal">
           MSUSCI: SCS
@@ -52,7 +52,7 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="">
+            <a href="active">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
@@ -70,7 +70,7 @@
               <p>User Profile</p>
             </a>
           </li>
-          <li class="active ">
+          <li class="./table.html">
             <a href="./tables.html">
               <i class="now-ui-icons design_bullet-list-67"></i>
               <p>Table List</p>
