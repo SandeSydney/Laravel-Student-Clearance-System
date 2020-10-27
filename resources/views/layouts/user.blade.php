@@ -33,6 +33,12 @@
     <div class="wrapper">
         <div class="sidebar" data-color="blue">
             <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <div class="m-3 ml-4">
+                <img src="{{asset('images/MU-Logo.png')}}" alt="Maseno University Logo" width="50">
+                    <a class="navbar-brand ml-2" style="color: black" href="{{ url('/') }}">
+                        {{ config('app.name', 'MSUSCI-SCS') }}
+                    </a>
+                </div>
                 <ul class="nav">
                   <li>
                     <a href="home">
@@ -65,10 +71,6 @@
         <div class="main-panel">
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <div class="container">
-                <img src="{{asset('images/MU-Logo.png')}}" alt="Maseno University Logo" width="50">
-                    <a class="navbar-brand ml-2" href="{{ url('/') }}">
-                        {{ config('app.name', 'MSUSCI-SCS') }}
-                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
                     </button>
