@@ -26,5 +26,8 @@ Route::get('/user-profile', 'App\Http\Controllers\UserController@userProfile');
 Route::get('/notifications', 'App\Http\Controllers\UserController@notifications');
 
 Route::get('/admin', 'App\Http\Controllers\AdminController@index');
+Route::get('/admin/notifications', 'App\Http\Controllers\AdminController@notifications');
+Route::get('/admin/user', 'App\Http\Controllers\AdminController@user');
+Route::get('/admin/tables', 'App\Http\Controllers\AdminController@tables');
 
 Auth::routes();
