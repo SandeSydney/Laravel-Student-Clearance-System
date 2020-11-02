@@ -20,7 +20,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="../assets/img/graduation-cap.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     @yield('title')
@@ -154,7 +154,7 @@
 
       <!-- Footer Section-->
       <footer class="footer">
-        <div class=" container-fluid ">
+        <div class="container-fluid">
           <nav>
             <ul>
               <li>
@@ -163,17 +163,17 @@
                 </a>
               </li>
               <li>
-                <a href="http://presentation.creative-tim.com">
+                <a href="">
                   About Us
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="copyright" id="copyright">
+          {{-- <div class="copyright" id="copyright">
             &copy; <script>
               document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
             </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-          </div>
+          </div> --}}
         </div>
       </footer>
     </div>
