@@ -1,11 +1,11 @@
 @extends('layouts.master')
 
 @section('title')
-    Home | MSUSCI:SCS
+    User | MSUSCI:SCS
 @endsection
 
 @section('navbar-brand')
-    Home
+    User
 @endsection
 
 @section('content')
