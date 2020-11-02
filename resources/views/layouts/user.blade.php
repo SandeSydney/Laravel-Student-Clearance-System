@@ -2,6 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/graduation-cap.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
@@ -28,17 +30,20 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
-<Body>
+<body>
   <div class="">
     <div class="wrapper">
         <div class="sidebar" data-color="blue">
-            <div class="sidebar-wrapper" id="sidebar-wrapper">
-                <div class="m-3 ml-4">
-                <img src="{{asset('images/MU-Logo.png')}}" alt="Maseno University Logo" width="50">
-                    <a class="navbar-brand ml-2" style="color: black" href="{{ url('/') }}">
-                        {{ config('app.name', 'MSUSCI-SCS') }}
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="{{asset('images/MU-Logo.png')}}" alt="">
                     </a>
-                </div>
+                    <a href="#" class="simple-text logo-normal">
+                      MSUSCI: SCS
+                    </a>
+            </div>
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+
                 <ul class="nav">
                   <li>
                     <a href="home">
@@ -69,18 +74,27 @@
               </div>
         </div>
         <div class="main-panel">
-            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                        <span class="navbar-toggler-icon"></span>
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="">@yield('navbar-brand')</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav mr-auto">
-
-                        </ul>
-
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
                             <!-- Authentication Links -->
@@ -116,10 +130,40 @@
                     </div>
                 </div>
             </nav>
+            <!-- End Navbar -->
+
+            <!-- The content section-->
+            <div class="panel-header panel-header-sm">
+            </div>
 
             @yield('content')
 
+            <!-- Footer Section-->
+            <footer class="footer">
+                <div class=" container-fluid ">
+                <nav>
+                    <ul>
+                    <li>
+                        <a href="">
+                        Student Clearance System
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        About Us
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+                {{-- <div class="copyright" id="copyright">
+                    &copy; <script>
+                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                    </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </div> --}}
+                </div>
+            </footer>
+
         </div>
     </div>
-</Body>
+</body>
 </html>
