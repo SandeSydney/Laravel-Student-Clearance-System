@@ -52,26 +52,26 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="active">
+            <a href="/admin">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
 
           <li>
-            <a href="./notifications.html">
+            <a href="/admin/notifications">
               <i class="now-ui-icons ui-1_bell-53"></i>
               <p>Notifications</p>
             </a>
           </li>
           <li>
-            <a href="./user.html">
+            <a href="/admin/user">
               <i class="now-ui-icons users_single-02"></i>
               <p>User Profile</p>
             </a>
           </li>
-          <li class="./table.html">
-            <a href="./tables.html">
+          <li class="">
+            <a href="/admin/tables">
               <i class="now-ui-icons design_bullet-list-67"></i>
               <p>Table List</p>
             </a>
@@ -92,7 +92,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Table List</a>
+            <a class="navbar-brand" href="">@yield('navbar-brand')</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -149,9 +149,8 @@
       <!-- The content section-->
       <div class="panel-header panel-header-sm">
       </div>
-      <div class="content">
-        @yield('content')
-      </div>
+
+      @yield('content')
 
       <!-- Footer Section-->
       <footer class="footer">
