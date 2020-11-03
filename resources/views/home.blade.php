@@ -4,11 +4,10 @@
     Home
 @endsection
 
-
 @section('content')
 <div class="container">
-    <div class="m-2 row row-cols-2">
-        <div class="col">
+    <div class="m-2 row">
+        <div class="col-sm-6">
             <div class="row flex items-center mt-2">
                 <img src="{{asset('images/Computing.png')}}" alt="SCI logo" width="40">
                 <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
@@ -21,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
             <div class="row flex items-center mt-2">
                 <img src="{{asset('images/finance.png')}}" alt="SCI logo" width="40">
                 <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
@@ -34,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
             <div class="row flex items-center mt-2">
                 <img src="{{asset('images/library.png')}}" alt="SCI logo" width="40">
                 <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
@@ -47,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
             <div class="row flex items-center mt-2">
                 <img src="{{asset('images/registrar.jpg')}}" alt="SCI logo" width="40">
                 <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
