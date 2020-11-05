@@ -30,70 +30,13 @@
                 <div class="flex justify-center pt-8 sm:pt-0 mt-5">
                     <img src="{{asset('images/MU-Logo.png')}}" alt="Logo with image of Gradating students over an image of an open book" width="100">
                 </div>
-                <div class="flex justify-center pt-8 sm:pt-0">
+                <div class="flex justify-center text-center pt-8 sm:pt-0">
 
-                    <h1 style="font-size: 48px">Maseno University</h1>
+                    <h1 style="font-size: 44px">Maseno University</h1>
                 </div>
-                <div class="flex justify-center pt-8 sm:pt-0">
-                    <h2>Students Clearance System: School Of Computing and Informatics</h2>
+                <div class="flex justify-center text-center pt-8 sm:pt-0">
+                    <h2 style="font-size: 28px">Students Clearance System: School Of Computing and Informatics</h2>
                 </div>
-
-                {{-- <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                            <img src="{{asset('images/Computing.png')}}" alt="SCI logo" width="40">
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="text-gray-900 dark:text-white">School of Computing and Informatics</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
-                                    Maseno University's School of Computing and Informatics. There are various departments within this school based on the cources offered which include; Computer Science, Information Technology, Information Communication Technology Management, and Computer Technology departments.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <img src="{{asset('images/finance.png')}}" alt="finance.p logo" width="40">
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="text-gray-900 dark:text-white">Finance Department</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
-                                    Finance department deals with the financial information of students. The department plays an important role in the determination of the students to be cleared based on the school fees statements and other financial obligations the students to be cleared have to the school.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <img src="{{asset('images/library.png')}}" alt="library logo" width="40">
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="#" class="text-gray-900 dark:text-white">Library Department</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
-                                    Students in their stay at school have interactions with the library. The library department therefore holds students records on the books and other academic resources borrowed with details of submission and pending submissions. The library record is checked in the determination of clearing a student.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <img src="{{asset('images/registrar.jpg')}}" alt="registrar logo" width="40">
-                               <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Registrar of Students and Academic Affairs</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-700 dark:text-gray-400 text-sm">
-                                    The Dean of Students and Academics office holds various documents partaining the academic status of the student. This can be if the student is enrolled in Maseno University institution, if student is proceding with their studies in the enrolled courses, and whether the student has deferered and re-joined the institution or not.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-
                 <div class="flex justify-center m-5">
                     <a href="{{ route('login') }}" class="btn btn-outline-secondary" role="button" aria-pressed="true">Proceed to Clearance</a>
                 </div>
