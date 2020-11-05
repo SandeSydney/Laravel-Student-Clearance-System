@@ -6,13 +6,17 @@
 
 @section('content')
     <div class="border">
-        <div class="text-center pt-2">Fill the clearance form below with correct details</div>
-        <form class="p-2">
+        <div class="text-center pt-2 font-weight-light">Kindly fill the clearance form below with correct details</div>
+        <form class="p-2 text-body">
             <fieldset class="p-2 border" style="background-color: #fdfdfd">
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="studentName">Student Name</label>
                         <input type="text" class="form-control" id="studentName" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="accBalance">Fees Balance</label>
+                        <input type="number" class="form-control" id="accBalance" required>
                     </div>
                 </div>
                 <div class="form-row">
@@ -44,14 +48,19 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 text-wrap">
                         <label for="course">Course</label>
                         <select id="inputState" class="form-control">
-                        <option class="form-control" selected>Bachelor of Science in Information Technology</option>
+                        <option class="form-control text-wrap" selected>Bachelor of Science in Information Technology</option>
                         <option class="form-control" selected>Bachelor of Science in Computer Science</option>
                         <option class="form-control" selected>Bachelor of Science in Computer Technology</option>
                         <option class="form-control" selected>Bachelor of Science in Information Computer Technology Management</option>
                         </select>
+                    </div>
+                    <div class="form-group col-md-2"></div>
+                    <div class="form-group col-md-4">
+                        <label for="libStatus">Library Status</label>
+                        <input type="text" class="form-control" id="libStatus" required>
                     </div>
                 </div>
                 <div class="text-center">
