@@ -6,15 +6,25 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function clearanceForm(){
-        return(view('clearance-form'));
+        return(view('user.clearance-form'));
     }
 
     public function userProfile(){
-        return(view('user-profile'));
+        return(view('user.user-profile'));
     }
 
     public function notifications(){
-        return(view('notifications'));
+        return(view('user.notifications'));
     }
 }
