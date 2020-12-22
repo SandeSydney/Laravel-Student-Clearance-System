@@ -21,6 +21,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/clearance-form', 'App\Http\Controllers\UserController@clearanceForm');
 Route::get('/user-profile', 'App\Http\Controllers\UserController@userProfile');
 Route::get('/notifications', 'App\Http\Controllers\UserController@notifications');
+Route::post('/imageUpload', 'App\Http\Controllers\UserController@imageUpload');
 
 Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin');
 Route::get('/admin/notifications', 'App\Http\Controllers\AdminController@notifications');
