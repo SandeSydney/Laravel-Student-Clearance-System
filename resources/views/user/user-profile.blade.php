@@ -7,10 +7,17 @@
 @section('content')
 <div class="card border p-4 mt-1 mb-1">
     <div class="card-body row">
-        <div class="col-md-4 text-center pr-3">
-            <img src="{{asset('assets/img/default-avatar.png')}}" class="rounded-circle border img-fluid" alt="Responsive image">
+        <div class="col-md-6 text-center pr-3">
+            {{-- defualt profile image --}}
+            <img src="{{asset('assets/img/default-avatar.png')}}" class="rounded-circle border img-fluid" alt="Profile Image">
+            {{-- Choose profile image --}}
+            <form action="/imageUpload" method="POST" class="p-3" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="image" class="p-1">
+                <input type="submit" value="Upload" class="p-1">
+            </form>
         </div>
-        <div class="col-md-8 p-2 card-body">
+        <div class="col-md-6 p-2 card-body">
             <div class="row">
                 <div class="col-md-2 font-weight-bold">Name:</div>
                 <div class="col-md-10">Simiyu Sydney</div>
