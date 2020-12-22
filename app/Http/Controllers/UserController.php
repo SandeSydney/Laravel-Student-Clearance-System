@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models;
+
 class UserController extends Controller
 {
     /**
@@ -26,5 +28,11 @@ class UserController extends Controller
 
     public function notifications(){
         return(view('user.notifications'));
+    }
+
+    public function imageUpload(Request $request){
+        $request->image->store('images','public');
+        return 'Uploaded';
+        // dd($request->file('image'));
     }
 }
