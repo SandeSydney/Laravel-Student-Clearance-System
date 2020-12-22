@@ -8,6 +8,7 @@
     <div class="border">
         <div class="text-center pt-2 font-weight-light">Kindly fill the clearance form below with correct details</div>
         <form class="p-2 text-body">
+            @csrf
             <fieldset class="p-2 border" style="background-color: #fdfdfd">
                 <div class="form-row">
                     <div class="form-group col-md-8">
