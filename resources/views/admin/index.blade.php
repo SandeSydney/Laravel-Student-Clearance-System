@@ -5,7 +5,7 @@
 @endsection
 
 @section('navbar-brand')
-    Home
+    Dashboard
 @endsection
 
 @section('content')

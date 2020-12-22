@@ -5,7 +5,7 @@
 @endsection
 
 @section('navbar-brand')
-    User
+    User Profile
 @endsection
 
 @section('content')
