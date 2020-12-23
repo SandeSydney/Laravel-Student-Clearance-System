@@ -18,7 +18,10 @@
             <img src="{{asset('/storage/images/'.Auth::user()->profileImage)}}" class="img-thumbnail border text-center m-auto" alt="Profile Image" width="70%" height="70%">
             @else
             {{-- Default profile picture --}}
-            <img src="{{asset('assets/img/default-avatar.png')}}" class="rounded-circle border text-center" alt="Profile Image">
+            <div class="text-center mr-5">
+                <img src="{{asset('assets/img/default-avatar.png')}}" class="rounded-circle border" alt="Profile Image">
+            </div>
+
             </form>
             @endif
             {{-- Choose profile image --}}
