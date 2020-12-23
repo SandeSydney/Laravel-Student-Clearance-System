@@ -53,13 +53,6 @@
                       <p>Home</p>
                     </a>
                   </li>
-
-                  <li>
-                    <a href="./notifications">
-                      <i class="now-ui-icons ui-1_bell-53"></i>
-                      <p>Notifications</p>
-                    </a>
-                  </li>
                   <li>
                     <a href="./user-profile">
                       <i class="now-ui-icons users_single-02"></i>
