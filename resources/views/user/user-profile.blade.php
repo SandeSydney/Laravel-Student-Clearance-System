@@ -15,7 +15,10 @@
             {{-- Check if the profileImage is present, provide a default value --}}
             @if(Auth::user()->profileImage)
             {{-- profile image --}}
-            <img src="{{asset('/storage/images/'.Auth::user()->profileImage)}}" class="img-thumbnail border text-center m-auto" alt="Profile Image" width="70%" height="70%">
+            <div class="text-center mr-5">
+                <img src="{{asset('/storage/images/'.Auth::user()->profileImage)}}" class="img-thumbnail border text-center" alt="Profile Image" width="70%" height="70%">
+            </div>
+
             @else
             {{-- Default profile picture --}}
             <div class="text-center mr-5">
@@ -29,10 +32,10 @@
                 @csrf
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="file" name="image" class="p-1 text-left">
+                        <input type="file" name="image" class="mb-1 text-left ml-5">
                     </div>
                     <div class="col-md-6">
-                        <input type="submit" value="Upload" class="p-1 ml-1 text-left">
+                        <input type="submit" value="Upload" class="mt-1 ml-5 text-left">
                     </div>
                 </div>
             </form>
