@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Storage;
+
 use App\Models;
 
 class UserController extends Controller
@@ -30,9 +32,33 @@ class UserController extends Controller
         return(view('user.notifications'));
     }
 
+    // function to upload a new image
     public function imageUpload(Request $request){
-        $request->image->store('images','public');
-        return 'Uploaded';
-        // dd($request->file('image'));
+        // find if the request has a file
+        if($request->hasFile('image')){
+            $imageName = $request->file('image')->getClientOriginalName();
+            // delete an existing profileImage
+            $this->deleteOldImage();
+
+            $request->file('image')->storeAs('images', $imageName, 'public');
+            auth()->user()->update(['profileImage'=> $imageName]);
+
+            // give success message for the upload
+            $request->session()->flash('message', 'Profile Image Uploaded Successfully!');
+
+            return redirect()->back();
+        }
+
+        // show message for upload error
+        $request->session()->flash('error', 'Profile Image Has Not Been Uploaded!');
+
+        return redirect()->back();
+    }
+
+    // function to delete an existing image
+    protected function deleteOldImage(){
+        if(auth()->user()->profileImage){
+            Storage::delete('/public/images/'.auth()->user()->profileImage);
+        }
     }
 }
