@@ -32,10 +32,10 @@
                 @csrf
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="file" name="image" class="mb-1 text-left ml-5">
+                        <input type="file" name="image" class="mt-1 mb-1 text-center ml-5">
                     </div>
                     <div class="col-md-6">
-                        <input type="submit" value="Upload" class="mt-1 ml-5 text-left">
+                        <input type="submit" value="Upload" class="mt-1 mb-1 ml-5 text-center">
                     </div>
                 </div>
             </form>
