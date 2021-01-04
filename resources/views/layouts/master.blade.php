@@ -56,12 +56,6 @@
                 </a>
             </li>
 
-            <li>
-                <a href="/admin/notifications">
-                <i class="now-ui-icons ui-1_bell-53"></i>
-                <p>Notifications</p>
-                </a>
-            </li>
             <li class="">
                 <a href="/admin/tables">
                 <i class="now-ui-icons design_bullet-list-67"></i>
