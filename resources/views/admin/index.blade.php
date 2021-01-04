@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Home | MSUSCI:SCS
+    Admin | MSUSCI:SCS
 @endsection
 
 @section('navbar-brand')
