@@ -17,15 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Default user Routes
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/clearance-form', 'App\Http\Controllers\UserController@clearanceForm');
 Route::get('/user-profile', 'App\Http\Controllers\UserController@userProfile');
-Route::get('/notifications', 'App\Http\Controllers\UserController@notifications');
 Route::post('/imageUpload', 'App\Http\Controllers\UserController@imageUpload');
 
+// SuperAdmin Routes
 Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin');
-Route::get('/admin/notifications', 'App\Http\Controllers\AdminController@notifications');
-Route::get('/admin/user', 'App\Http\Controllers\AdminController@user');
 Route::get('/admin/tables', 'App\Http\Controllers\AdminController@tables');
+
+// Finance (admin) routes
+Route::get('/finance', 'App\Http\Controllers\FinanceController@index')->name('finance');
 
 Auth::routes();
