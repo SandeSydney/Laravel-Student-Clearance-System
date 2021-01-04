@@ -27,10 +27,14 @@ class LoginController extends Controller
      *
      * @var string
      */
-    // check role of user/admin to redirect them to their pages
+    // check role of user/admin/superadmin to redirect them to their pages
     protected function authenticated(Request $request, $user){
-        if ($user->hasRole('administrator')) {
+        if ($user->hasRole('superadministrator')) {
             return redirect('/admin');
+        }
+
+        if ($user->hasRole('administrator')) {
+            return redirect('/finance');
         }
 
         if ($user->hasRole('user')) {
