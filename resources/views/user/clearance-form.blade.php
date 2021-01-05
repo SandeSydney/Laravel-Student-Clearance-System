@@ -15,10 +15,10 @@
                         <label for="studentName">Student Name</label>
                         <input type="text" class="form-control" id="studentName" required>
                     </div>
-                    <div class="form-group col-md-4">
+                    {{-- <div class="form-group col-md-4">
                         <label for="accBalance">Fees Balance</label>
                         <input type="number" class="form-control" id="accBalance" required>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6 text-wrap">
+                    <div class="form-group col-md-8 text-wrap">
                         <label for="course">Course</label>
                         <select id="inputState" class="form-control">
                         <option class="form-control text-wrap" selected>Bachelor of Science in Information Technology</option>
@@ -58,15 +58,15 @@
                         <option class="form-control" selected>Bachelor of Science in Information Computer Technology Management</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-2"></div>
-                    <div class="form-group col-md-4">
+                    {{-- <div class="form-group col-md-2"></div> --}}
+                    {{-- <div class="form-group col-md-4">
                         <label for="libStatus">Library Status</label>
                         <input type="text" class="form-control" id="libStatus" required>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="text-center">
-                    <button type="reset" class="btn btn-warning btn-lg">Cancel</button>
-                    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                    <button type="reset" class="btn btn-warning">Cancel</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </fieldset>
         </form>
