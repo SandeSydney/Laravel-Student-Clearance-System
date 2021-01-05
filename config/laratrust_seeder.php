@@ -17,7 +17,11 @@ return [
             'payments' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
-        'administrator' => [
+        'financeadmin' => [
+            'users' => 'c,r,u,d',
+            'profile' => 'r,u'
+        ],
+        'libraryadmin' => [
             'users' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
