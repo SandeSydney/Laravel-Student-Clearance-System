@@ -30,4 +30,7 @@ Route::get('/admin/tables', 'App\Http\Controllers\AdminController@tables');
 // Finance (admin) routes
 Route::get('/finance', 'App\Http\Controllers\FinanceController@index')->name('finance');
 
+// Library (admin) routes
+Route::get('/library', 'App\Http\Controllers\LibraryController@index')->name('library');
+
 Auth::routes();
