@@ -22,7 +22,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                        <label for="admNumber">Addmission Number</label>
+                        <label for="admNumber">Admission Number</label>
                         <input type="text" class="form-control" id="admNumber" required>
                     </div>
                     <div class="form-group col-md-4">
