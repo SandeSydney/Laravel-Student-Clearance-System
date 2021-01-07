@@ -25,10 +25,11 @@ Route::post('/imageUpload', 'App\Http\Controllers\UserController@imageUpload');
 
 // SuperAdmin Routes
 Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin');
-Route::get('/admin/tables', 'App\Http\Controllers\AdminController@tables');
 
 // Finance (admin) routes
 Route::get('/finance', 'App\Http\Controllers\FinanceController@index')->name('finance');
+Route::post('/finance/store', 'App\Http\Controllers\FinanceController@store');
+Route::get('/finance/{id}/edit', 'App\Http\Controllers\FinanceController@edit');
 
 // Library (admin) routes
 Route::get('/library', 'App\Http\Controllers\LibraryController@index')->name('library');
