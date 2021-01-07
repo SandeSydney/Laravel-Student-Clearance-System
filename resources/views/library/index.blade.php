@@ -11,7 +11,7 @@
 @section('content')
     <div class="container">
         <div class="well pt-2">
-            <h2>Library Department</h2>
+            <h2>Library Section</h2>
         </div>
         <hr>
         <div class="border">
