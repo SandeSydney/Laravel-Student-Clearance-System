@@ -40,6 +40,48 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="regNumber" class="col-md-4 col-form-label text-md-right">{{ __('Reg Number') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control @error('reg number') is-invalid @enderror" name="regNumber" value="{{ old('regNumber') }}" autocomplete="regNumber">
+
+                                @error('regNumber')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="IdNumber" class="col-md-4 col-form-label text-md-right">{{ __('Id Number') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="IdNumber" type="text" class="form-control @error('IdNumber') is-invalid @enderror" name="IdNumber" value="{{ old('IdNumber') }}" autocomplete="IdNumber">
+
+                                @error('IdNumber')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phoneNumber" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="phoneNumber" type="tel" placeholder="0712345678" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" class="form-control @error('phoneNumber') is-invalid @enderror" name="phoneNumber" value="{{ old('phoneNumber') }}" autocomplete="phoneNumber">
+
+                                @error('phoneNumber')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
