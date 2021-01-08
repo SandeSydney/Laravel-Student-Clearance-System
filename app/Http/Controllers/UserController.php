@@ -50,7 +50,7 @@ class UserController extends Controller
         }
 
         // show message for upload error
-        $request->session()->flash('error', 'Profile Image Has Not Been Uploaded!');
+        $request->session()->flash('error', 'No profile image selected!');
 
         return redirect()->back();
     }
