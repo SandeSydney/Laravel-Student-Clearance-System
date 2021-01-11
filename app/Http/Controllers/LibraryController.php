@@ -23,6 +23,15 @@ class LibraryController extends Controller
         return view('library.index')->with(['libraries' => $libraries]);
     }
 
+    // Edit the students' library status
+    public function edit($id){
+
+        // find the finance to edit using the id
+        $library = Library::find($id);
+
+        return view('library.edit')->with(['library' => $library]);
+    }
+
     // store the library details of the student
     public function store(Request $request){
 
