@@ -35,7 +35,7 @@ class FinanceController extends Controller
 
         // validate the fields before submission
         $request->validate([
-            'regNumber' => 'required|unique:finances|Exists:finances|max:15',
+            'regNumber' => ['required','unique:finances','Exists:users','max:15'],
             'accBalance' => 'required',
         ]);
 
