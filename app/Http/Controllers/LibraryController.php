@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Library;
+
 class LibraryController extends Controller
 {
     /**
@@ -17,6 +19,25 @@ class LibraryController extends Controller
     }
 
     public function index(){
-        return view('library.index');
+        $libraries = Library::all();
+        return view('library.index')->with(['libraries' => $libraries]);
+    }
+
+    // store the library details of the student
+    public function store(Request $request){
+
+        // validate the fields before submission
+        $request->validate([
+            'regNumber' => ['required','unique:libraries','Exists:users','max:15'],
+            'libStatus' => 'required',
+        ]);
+
+        // Submit the values to the database
+        Library::create($request->all());
+
+        // go to the previous page with a session message
+        return redirect()->back()->with(
+            'message', 'Student Library Status Inserted Successfully'
+        );
     }
 }
