@@ -28,7 +28,7 @@ class FinanceController extends Controller
         // find the finance to edit using the id
         $finance = Finance::find($id);
 
-        return view('finance.edit', compact('finance'));
+        return view('finance.edit')->with(['finance' => $finance]);
     }
 
     public function store(Request $request){
