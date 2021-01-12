@@ -2,14 +2,18 @@
 
 @section('content')
 <div class="container">
+    <div>
+        <a class="btn btn-warning " href="/library">Back</a>
+    </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header text-center">{{ __('Edit Library Status') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="">
+                    <form method="POST" action="{{ route('library.update', $library->id) }}">
                         @csrf
+                        @method('patch')
 
                         <div class="form-group row">
                             <label for="regNumber" class="col-md-4 col-form-label text-md-right">{{ __('Admission Number') }}</label>
@@ -28,7 +32,7 @@
                             <label for="libStatus" class="col-md-4 col-form-label text-md-right">{{ __('Library Status') }}</label>
 
                             <div class="col-md-6">
-                                <input id="libStatus" type="radio" name="libStatus" value="{{ $library->libStatus }}" required> Cleared
+                                <input id="libStatus" type="radio" name="libStatus" value="{{ $library->libStatus }}" checked required> Cleared
                                 <br>
                                 <input id="libStatus" type="radio" name="libStatus" value="{{ $library->libStatus }}" required> Not Cleared
 
