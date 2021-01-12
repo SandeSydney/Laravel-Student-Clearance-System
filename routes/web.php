@@ -27,13 +27,15 @@ Route::post('/imageUpload', 'App\Http\Controllers\UserController@imageUpload');
 Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin');
 
 // Finance (admin) routes
-Route::get('/finance', 'App\Http\Controllers\FinanceController@index')->name('finance');
-Route::post('/finance/store', 'App\Http\Controllers\FinanceController@store');
-Route::get('/finance/{id}/edit', 'App\Http\Controllers\FinanceController@edit');
+Route::get('/finance', 'App\Http\Controllers\FinanceController@index')->name('finance.index');
+Route::post('/finance/store', 'App\Http\Controllers\FinanceController@store')->name('finance.store');
+Route::get('/finance/{id}/edit', 'App\Http\Controllers\FinanceController@edit')->name('finance.edit');
+Route::patch('/finance/{id}/update', 'App\Http\Controllers\FinanceController@update')->name('finance.update');
 
 // Library (admin) routes
-Route::get('/library', 'App\Http\Controllers\LibraryController@index')->name('library');
-Route::post('/library/store', 'App\Http\Controllers\LibraryController@store');
-Route::get('/library/{id}/edit', 'App\Http\Controllers\LibraryController@edit');
+Route::get('/library', 'App\Http\Controllers\LibraryController@index')->name('library.index');
+Route::post('/library/store', 'App\Http\Controllers\LibraryController@store')->name('library.store');
+Route::get('/library/{id}/edit', 'App\Http\Controllers\LibraryController@edit')->name('library.edit');
+Route::patch('/library/{id}/update', 'App\Http\Controllers\LibraryController@update')->name('library.update');
 
 Auth::routes();
