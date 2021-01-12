@@ -61,7 +61,7 @@
         </div>
     </div>
     <div class="card-body text-center p-3">
-        <a href="" class="btn btn-success btn-lg">Edit Profile</a>
+        <a href="/edit" class="btn btn-success btn-lg">Edit Profile</a>
         <a href="" class="btn btn-danger btn-lg">Delete Account</a>
     </div>
 </div>
