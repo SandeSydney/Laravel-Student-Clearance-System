@@ -28,6 +28,24 @@ class UserController extends Controller
         return(view('user.user-profile'));
     }
 
+    public function edit(){
+        return(view('user.edit'));
+    }
+
+    public function update(Request $request){
+
+        // find user profile to update info
+        $userProfile = auth()->user();
+        $userProfile->update(['name'=>$request->name]);
+        $userProfile->update(['email'=>$request->email]);
+        $userProfile->update(['regNumber'=>$request->regNumber]);
+        $userProfile->update(['IdNumber'=>$request->IdNumber]);
+        $userProfile->update(['phoneNumber'=>$request->phoneNumber]);
+
+        return redirect('/user-profile')->with('message', 'Updated!');
+    }
+
+
     public function notifications(){
         return(view('user.notifications'));
     }
