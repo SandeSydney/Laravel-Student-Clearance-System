@@ -37,11 +37,9 @@ class LibraryController extends Controller
 
         // find the library Id to edit
         $library = Library::find($id);
-        // $library->update(['libStatus'=>$request->libStatus]);
+        $library->update(['libStatus'=>$request->libStatus]);
 
-        dd($request->all());
-
-        return redirect(route('library.index'))->with('message', 'Updated!');
+        return redirect(route('library.index'))->with('message', 'Lib Status Updated!');
     }
 
     // store the library details of the student
