@@ -45,13 +45,13 @@
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#finances">Click to View</button>
             <div id="finances" class="collapse flex">
                 <ol>
-                @foreach ($finances as $finance)
-                    <li>
-                        {{ $finance->regNumber}} : {{ $finance->accBalance }} &nbsp;
-                        <a href="{{'/finance/ '.$finance->id.'/edit'}}" class="btn btn-warning">Edit</a>
-                    </li>
-                @endforeach
-            </ol>
+                    @foreach ($finances as $finance)
+                        <li>
+                            {{ $finance->regNumber}} : {{ $finance->accBalance }} &nbsp;
+                            <a href="{{'/finance/ '.$finance->id.'/edit'}}" class="btn btn-warning">Edit</a>
+                        </li>
+                    @endforeach
+                </ol>
             </div>
 
         </div>
