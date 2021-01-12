@@ -15,7 +15,7 @@ class LibraryController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('role:libraryadmin');
+        $this->middleware('role:libraryadmin|superadministrator');
     }
 
     public function index(){

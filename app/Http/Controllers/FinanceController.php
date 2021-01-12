@@ -15,7 +15,7 @@ class FinanceController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('role:financeadmin');
+        $this->middleware('role:financeadmin|superadministrator');
     }
 
     public function index(){

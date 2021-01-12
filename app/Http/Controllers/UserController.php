@@ -17,7 +17,7 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('role:user|administrator');
+        $this->middleware('role:user|superadministrator');
     }
 
     public function clearanceForm(){
