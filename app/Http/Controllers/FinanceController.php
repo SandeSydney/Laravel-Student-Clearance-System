@@ -31,6 +31,16 @@ class FinanceController extends Controller
         return view('finance.edit')->with(['finance' => $finance]);
     }
 
+    // function to update students' finance
+    public function update(Request $request, $id){
+
+        // find the finance to edit using the id
+        $finance = Finance::find($id);
+        $finance->update(['accBalance'=>$request->accBalance]);
+
+        return redirect(route('finance.index'))->with('message', 'Updated!');
+    }
+
     public function store(Request $request){
 
         // validate the fields before submission
