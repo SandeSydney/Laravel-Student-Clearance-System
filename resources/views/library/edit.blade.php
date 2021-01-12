@@ -32,9 +32,9 @@
                             <label for="libStatus" class="col-md-4 col-form-label text-md-right">{{ __('Library Status') }}</label>
 
                             <div class="col-md-6">
-                                <input id="libStatus" type="radio" name="libStatus" value="{{ $library->libStatus }}" checked required> Cleared
+                                <input id="libStatus" type="radio" name="libStatus" value="Cleared" checked required> Cleared
                                 <br>
-                                <input id="libStatus" type="radio" name="libStatus" value="{{ $library->libStatus }}" required> Not Cleared
+                                <input id="libStatus" type="radio" name="libStatus" value="Not Cleared" required> Not Cleared
 
                                 @error('libStatus')
                                     <span class="invalid-feedback" role="alert">
