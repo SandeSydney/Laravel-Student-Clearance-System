@@ -26,7 +26,7 @@
                         <input type="text" class="form-control" id="admNumber" required>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="startYear">Addmission Year</label>
+                        <label for="startYear">Admission Year</label>
                         <input type="date" class="form-control" id="startYear" required>
                     </div>
                     <div class="form-group col-md-4">
