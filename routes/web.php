@@ -22,6 +22,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/clearance-form', 'App\Http\Controllers\UserController@clearanceForm');
 Route::get('/user-profile', 'App\Http\Controllers\UserController@userProfile');
 Route::post('/imageUpload', 'App\Http\Controllers\UserController@imageUpload');
+Route::get('/edit', 'App\Http\Controllers\UserController@edit');
+Route::patch('/update', 'App\Http\Controllers\UserController@update');
 
 // SuperAdmin Routes
 Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin');
