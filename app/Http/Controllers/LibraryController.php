@@ -32,6 +32,18 @@ class LibraryController extends Controller
         return view('library.edit')->with(['library' => $library]);
     }
 
+    // function to update students' library status
+    public function update(Request $request, $id){
+
+        // find the library Id to edit
+        $library = Library::find($id);
+        // $library->update(['libStatus'=>$request->libStatus]);
+
+        dd($request->all());
+
+        return redirect(route('library.index'))->with('message', 'Updated!');
+    }
+
     // store the library details of the student
     public function store(Request $request){
 
